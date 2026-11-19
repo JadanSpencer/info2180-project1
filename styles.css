@@ -5,173 +5,308 @@
    ========================================================= */
 body {
     margin: 0;
-    font-size: 16px;
-    /* TODO: font-family (see brief), change font-size to 18px */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2d3748;
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 img {
-    /* TODO: stop images overflowing their boxes */
+    max-width: 100%;
+    display: block;
 }
 
 /* =========================================================
    2. HEADER  (title left, nav right, no bullets)
    ========================================================= */
 header {
-    /* TODO: background colour */
+    background-color: white;
+    padding: 10px 0;
 }
 
 header .container {
-    /* TODO: put h1 and nav side by side, push them apart, centre vertically */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-    /* TODO: font size */
+    font-size: 18px;
+    margin: 0;
 }
 
 header nav ul {
-    /* TODO: remove bullets, lay items out horizontally */
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 header nav li {
-    /* TODO: space between links */
+    margin-left: 20px;
 }
 
 header nav a {
-    /* TODO: colour, remove underline, bold */
+    color: #6b7280;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 header nav a:hover {
-    /* TODO: hover colour */
+    color: #5A67D8;
 }
 
 /* =========================================================
    3. HERO OVERVIEW  (image left, text right)
    ========================================================= */
 .overview-hero {
-    /* TODO: background colour, vertical padding */
+    background-color: #E2E8F0;
+    padding: 40px 0;
 }
 
 .overview-hero .container {
-    /* TODO: image and text side by side */
+    display: flex;
+    align-items: center;
 }
 
 .overview-hero-image {
-    /* TODO: width of image column */
+    flex: 1;
 }
 
 .overview-hero-text {
-    /* TODO: width / spacing of text column */
+    flex: 1;
+    padding-left: 40px;
+}
+
+.overview-hero-text h2 {
+    font-weight: normal;
+    font-size: 28px;
+    margin-top: 0;
 }
 
 /* =========================================================
    4. LEARN ABOUT  (CSS Grid, 3 columns)
    ========================================================= */
 .learn-about {
-    /* TODO: spacing around the section */
+    padding: 30px 0 40px;
 }
 
 .learn-about h2 {
-    /* TODO: size and colour */
+    font-size: 24px;
+    color: #48BB78;
 }
 
 .cards {
-    /* TODO: 3-column grid with a gap */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .card {
-    /* TODO: border, rounded corners, shadow */
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .card img {
-    /* TODO: make images fill the card width, same height */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .card-body {
-    /* TODO: padding */
+    padding: 15px 20px 25px;
 }
 
 .card-body h3 {
-    /* TODO: colour and size */
+    color: #48BB78;
+    font-size: 21px;
+    margin: 0 0 10px;
+}
+
+.card-body p {
+    margin: 0;
 }
 
 /* =========================================================
    5. COVID-19 TESTING  (text left, button right)
    ========================================================= */
 .testing {
-    /* TODO: background, text colour, padding */
+    background-color: #4A5568;
+    color: white;
+    padding: 70px 0;
 }
 
 .testing .container {
-    /* TODO: description and button side by side, pushed apart */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .testing-desciption {
-    /* TODO: limit width so text doesn't run under the button */
+    max-width: 55%;
 }
 
 .testing .btn {
-    /* TODO: look like a button: background, colour, padding, radius, no underline, uppercase */
+    background-color: #48BB78;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.testing .btn:hover {
+    background-color: #38a169;
 }
 
 /* =========================================================
    6. RECENT STORIES  (circular image left, text beside it)
    ========================================================= */
 .stories {
-    /* TODO: spacing */
+    padding: 60px 0 30px;
 }
 
 .stories h2 {
-    /* TODO: colour */
+    color: #5A67D8;
 }
 
 .stories article {
-    /* TODO: image and article-body side by side, space between articles */
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
 .stories article img {
-    /* TODO: fixed square size, circular, crop instead of squash */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 40px;
 }
 
 .article-body h3 {
-    /* TODO: font size */
+    font-size: 18px;
+    margin-top: 0;
 }
 
 .article-body a {
-    /* TODO: colour */
+    color: #5A67D8;
+    text-decoration: none;
+}
+
+.article-body a:hover {
+    text-decoration: underline;
 }
 
 /* =========================================================
    7. NEWSLETTER  (centred, input + button side by side)
    ========================================================= */
 .newsletter {
-    /* TODO: background, text colour, padding, centre the text */
+    background-color: #48BB78;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.newsletter .container {
+    max-width: 600px;
+}
+
+.newsletter h3 {
+    margin-top: 0;
 }
 
 .newsletter form {
-    /* TODO: put input and button side by side, centred */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.newsletter .form-group {
+    display: flex;
 }
 
 .newsletter input {
-    /* TODO: padding, border, width */
+    width: 280px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
 }
 
 .newsletter .btn {
-    /* TODO: background, colour, padding, no border, pointer cursor */
+    background-color: #5A67D8;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 35px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.newsletter .btn:hover {
+    background-color: #4c51bf;
 }
 
 .message {
-    /* TODO: spacing above the message */
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 /* =========================================================
    8. FOOTER
    ========================================================= */
 footer {
-    /* TODO: background, text colour, padding */
+    background-color: #4A5568;
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+/* =========================================================
+   9. SMALL SCREENS
+   ========================================================= */
+@media (max-width: 700px) {
+    header .container,
+    .overview-hero .container,
+    .testing .container,
+    .stories article,
+    .newsletter form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav li:first-child {
+        margin-left: 0;
+    }
+
+    .overview-hero-text {
+        padding-left: 0;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .testing-desciption {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .stories article img {
+        margin: 0 0 20px;
+    }
 }
