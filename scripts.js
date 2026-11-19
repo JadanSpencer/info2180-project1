@@ -5,16 +5,24 @@
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    // TODO: find the newsletter form and attach handleSubmit to its "submit" event
+    const form = document.querySelector('.newsletter form');
+    form.addEventListener('submit', handleSubmit);
 }
 
 function handleSubmit(event) {
-    // TODO: stop the page from reloading
-    // TODO: read the email from the input
-    // TODO: if it's empty, show "Please enter a valid email address."
-    //       otherwise show the "Thank you! ..." message
+    // Stop the browser from actually submitting/reloading the page
+    event.preventDefault();
+
+    const email = document.querySelector('#email').value.trim();
+
+    if (email === '') {
+        showMessage('Please enter a valid email address.');
+    } else {
+        showMessage(`Thank you! Your email address ${email} has been added to our mailing list!`);
+    }
 }
 
 function showMessage(text) {
-    // TODO: put text into the div with class "message" (replacing anything there)
+    // textContent replaces any previous message and is safe for user input
+    document.querySelector('.message').textContent = text;
 }
