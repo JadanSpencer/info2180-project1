@@ -1,11 +1,177 @@
 /* Add your CSS to this file */
+
+/* =========================================================
+   1. BASE
+   ========================================================= */
 body {
     margin: 0;
     font-size: 16px;
+    /* TODO: font-family (see brief), change font-size to 18px */
 }
 
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+}
+
+img {
+    /* TODO: stop images overflowing their boxes */
+}
+
+/* =========================================================
+   2. HEADER  (title left, nav right, no bullets)
+   ========================================================= */
+header {
+    /* TODO: background colour */
+}
+
+header .container {
+    /* TODO: put h1 and nav side by side, push them apart, centre vertically */
+}
+
+header h1 {
+    /* TODO: font size */
+}
+
+header nav ul {
+    /* TODO: remove bullets, lay items out horizontally */
+}
+
+header nav li {
+    /* TODO: space between links */
+}
+
+header nav a {
+    /* TODO: colour, remove underline, bold */
+}
+
+header nav a:hover {
+    /* TODO: hover colour */
+}
+
+/* =========================================================
+   3. HERO OVERVIEW  (image left, text right)
+   ========================================================= */
+.overview-hero {
+    /* TODO: background colour, vertical padding */
+}
+
+.overview-hero .container {
+    /* TODO: image and text side by side */
+}
+
+.overview-hero-image {
+    /* TODO: width of image column */
+}
+
+.overview-hero-text {
+    /* TODO: width / spacing of text column */
+}
+
+/* =========================================================
+   4. LEARN ABOUT  (CSS Grid, 3 columns)
+   ========================================================= */
+.learn-about {
+    /* TODO: spacing around the section */
+}
+
+.learn-about h2 {
+    /* TODO: size and colour */
+}
+
+.cards {
+    /* TODO: 3-column grid with a gap */
+}
+
+.card {
+    /* TODO: border, rounded corners, shadow */
+}
+
+.card img {
+    /* TODO: make images fill the card width, same height */
+}
+
+.card-body {
+    /* TODO: padding */
+}
+
+.card-body h3 {
+    /* TODO: colour and size */
+}
+
+/* =========================================================
+   5. COVID-19 TESTING  (text left, button right)
+   ========================================================= */
+.testing {
+    /* TODO: background, text colour, padding */
+}
+
+.testing .container {
+    /* TODO: description and button side by side, pushed apart */
+}
+
+.testing-desciption {
+    /* TODO: limit width so text doesn't run under the button */
+}
+
+.testing .btn {
+    /* TODO: look like a button: background, colour, padding, radius, no underline, uppercase */
+}
+
+/* =========================================================
+   6. RECENT STORIES  (circular image left, text beside it)
+   ========================================================= */
+.stories {
+    /* TODO: spacing */
+}
+
+.stories h2 {
+    /* TODO: colour */
+}
+
+.stories article {
+    /* TODO: image and article-body side by side, space between articles */
+}
+
+.stories article img {
+    /* TODO: fixed square size, circular, crop instead of squash */
+}
+
+.article-body h3 {
+    /* TODO: font size */
+}
+
+.article-body a {
+    /* TODO: colour */
+}
+
+/* =========================================================
+   7. NEWSLETTER  (centred, input + button side by side)
+   ========================================================= */
+.newsletter {
+    /* TODO: background, text colour, padding, centre the text */
+}
+
+.newsletter form {
+    /* TODO: put input and button side by side, centred */
+}
+
+.newsletter input {
+    /* TODO: padding, border, width */
+}
+
+.newsletter .btn {
+    /* TODO: background, colour, padding, no border, pointer cursor */
+}
+
+.message {
+    /* TODO: spacing above the message */
+}
+
+/* =========================================================
+   8. FOOTER
+   ========================================================= */
+footer {
+    /* TODO: background, text colour, padding */
 }
